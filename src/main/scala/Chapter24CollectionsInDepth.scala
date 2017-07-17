@@ -95,6 +95,8 @@ object Chapter24CollectionsInDepth extends App {
   }) //returns value for the key
   //map {4} //NoSuchElementException
 
+  println("Using flatMap for Option[T] as result of map.get(): " + map.get(3).flatMap(_.toString.zipWithIndex.map { case (a, b) => (b, a) }.toMap.get(0))) // None
+
   /** Seq */
   //indexOf, lastIndexOf, indexOfSlice, lastIndexOfSlice, indexWhere, lastIndexWhere, segmentLength, prefixLength
   println(seq contains 0, //contains
