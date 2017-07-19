@@ -31,7 +31,7 @@ class AnnotationTest {
   def j() ={} // for JNI integration
 }
 
-//@Serializable object An // deprecated since scala 2.9.0. Use instead:
+//@serializable object An // deprecated since scala 2.9.0. Use instead:
 object An extends Serializable
 
 sealed trait Bbase
