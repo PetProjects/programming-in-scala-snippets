@@ -79,5 +79,5 @@ object Chapter31CombiningScalaAndJava extends App {
   val f: Int => Int = _ + 1
   //val mappedjs2 = jstream.map(f).toArray //Error:(80, 31) type mismatch; found   : Int => Int required: java.util.function.IntUnaryOperator
   val f2: java.util.function.IntUnaryOperator = _ + 1
-  jstream.map(f2).toArray //compiles
+//  jstream.map(f2).toArray //compiles, but will fail because java stream was already iterated
 }
